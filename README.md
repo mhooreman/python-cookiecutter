@@ -12,8 +12,8 @@ This project shall be managed using UV.
 - Install UV
 - Install cookiecutter. Either using `pip install cookiecutter` or, better,
   from within uv `uv tool install cookiecutter`
-- Deploy the template as a python project, using
-  `cookiecutter python-cookiecutter`
+- Deploy the cookiecutter template as a python project, using
+  `cookiecutter gh:mhooreman/python-cookiecutter`
 
 ## About
 
