@@ -1,4 +1,4 @@
-"""Provide the {{ cookiecutter.project_slug}} package."""
+"""Provide the {{ cookiecutter.project_slug }} package."""
 
 import importlib.metadata
 import pathlib
