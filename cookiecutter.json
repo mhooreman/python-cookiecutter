@@ -1,0 +1,10 @@
+{
+    "project_name": "Lorem ipsum",
+    "shortdescription": "Lorem ipsum.",
+    "first_version": "0.0.1",
+    "initialyear": "2025",
+    "author": "Michael Hooreman",
+    "email": "mhooreman@icloud.com",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "pypi_package_name": "{{ cookiecutter.project_slug.replace('_', '-') }}"
+}
