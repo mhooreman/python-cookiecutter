@@ -1,1 +1,1 @@
-"""Gamping unit tests."""
+"""{{ cookiecutter.project_name }} unit tests."""
