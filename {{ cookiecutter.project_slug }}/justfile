@@ -3,8 +3,11 @@ set script-interpreter := ['uv', 'run', '--script']
 set dotenv-load := true
 
 # Default recipe: show available receipes
-_default:
-    @just --list
+_default: help
+
+# Provide the list of just receipes; this is called when no receipe if given
+help:
+    just --list
 
 # Tying verification
 types:
@@ -15,7 +18,7 @@ qc: lint types testpyver
 
 # Static code analysis/linting. Additional arguments will be passed to ruff check.
 lint *args:
-    uv run ruff check {{ "{{" }} args {{ "}}" }}
+    uv run ruff check {{ args }}
 
 # Run unit tests
 test:
@@ -32,7 +35,7 @@ build:
 
 # Run the application, passes the additional arguments to it
 run *args:
-    uv run {{ cookiecutter.project_slug }} hermitageagenda {{ "{{" }} args {{ "}}" }}
+    uv run hermitageagenda {{ args }}
 
 # Remove cache files and other temporary files
 [script]
