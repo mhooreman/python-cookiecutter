@@ -72,7 +72,7 @@ clean:
         if not found:
             logger.info(f"No {case} found")
 
-# Clean and then remove dists
+# Clean and then remove dists and .venv
 [script]
 clobber: clean
     import pathlib
