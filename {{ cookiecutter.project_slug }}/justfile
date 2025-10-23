@@ -18,7 +18,7 @@ qc: lint types testpyver
 
 # Static code analysis/linting. Additional arguments will be passed to ruff check.
 lint *args:
-    uv run ruff check {{ args }}
+    uv run ruff check {{ "{{" }} args {{ "}}" }} 
 
 # Run unit tests
 test:
@@ -35,7 +35,7 @@ build:
 
 # Run the application, passes the additional arguments to it
 run *args:
-    uv run hermitageagenda {{ args }}
+    uv run hermitageagenda {{ "{{" }} args {{ "}}" }}
 
 # Remove cache files and other temporary files
 [script]
