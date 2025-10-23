@@ -35,7 +35,7 @@ build:
 
 # Run the application, passes the additional arguments to it
 run *args:
-    uv run hermitageagenda {{ "{{" }} args {{ "}}" }}
+    uv run {{ cookiecutter.project_slug }}  {{ "{{" }} args {{ "}}" }}
 
 # Remove cache files and other temporary files
 [script]
