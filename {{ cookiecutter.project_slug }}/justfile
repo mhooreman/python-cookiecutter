@@ -90,5 +90,17 @@ clobber: clean
         found = True
         logging.info(f"Removing {f}")
         f.unlink()
+
     if not found:
         logging.info(f"No dist file found")
+
+    found = False
+    for f in pathlib.Path(".").glob("**/.venv"):
+        found = True
+        logging.info(f"Removing {f}")
+        shutil.rmtree(f)
+
+    if not found:
+        # Will never happen as uv is called by this justfile and uv creates a
+        # .venv
+        logging.info(f"No .venv directory")
