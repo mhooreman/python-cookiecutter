@@ -14,7 +14,7 @@ __location__ = pathlib.Path(__file__).parent
 __all__ = [
     "__name__",
     "__version__",
-    "__summary__",
     "__author__",
     "__author_email__",
+    "__location__",
 ]
