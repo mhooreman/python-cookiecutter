@@ -1,3 +1,10 @@
+.coverage
+.venv
+.mypy_cache
+.pypy_cache
+.pytest_cache
+.ruff_cache
+.dist
 __pycache__
 .*.swp
 .swp
